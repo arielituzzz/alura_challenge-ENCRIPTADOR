@@ -1,0 +1,23 @@
+{
+  "name": "encriptador",
+  "version": "1.0.0",
+  "description": "Encriptador para proyecto alura-oracle",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
+    "start": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arielituzzz/alura_challenge-ENCRIPTADOR.git"
+  },
+  "author": "Ariel Ricardo Suarez Baez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arielituzzz/alura_challenge-ENCRIPTADOR/issues"
+  },
+  "homepage": "https://github.com/arielituzzz/alura_challenge-ENCRIPTADOR#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
