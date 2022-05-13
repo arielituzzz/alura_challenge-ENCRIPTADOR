@@ -12,18 +12,42 @@
       <img src="/assets/img/Vector.png" alt="alura-img" />
     </header>
     <main>
-      <textarea
-        name="converter"
-        id="converter-box"
-        cols="30"
-        rows="10"
-        placeholder="Ingrese su texto"
-      ></textarea>
-      <button id="encrypt-btn">Encriptar</button>
-      <button id="decrypt-btn">Desencriptar</button>
-      <button id="copy-btn">Copiar</button>
-      <div>
-        <textarea type="text" id="result"></textarea>
+      <div class="boxTitle"><h1>Challenge Encriptador</h1></div>
+      <section>
+        <div id="input-area" class="inputArea">
+          <div id="input-box">
+            <textarea
+              name="converter"
+              id="converter-box"
+              cols="30"
+              rows="10"
+              placeholder="Ingrese su texto"
+              class="inputArea__input"
+            ></textarea>
+          </div>
+          <div class="inputArea__btns">
+            <button class="inputArea__btns__btn" id="encrypt-btn">
+              Encriptar
+            </button>
+            <button class="inputArea__btns__btn" id="decrypt-btn">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+        <div id="animation-area" class="animationArea"></div>
+        <div class="resultArea">
+          <textarea
+            type="text"
+            id="result"
+            class="resultArea__resultBox"
+          ></textarea>
+          <div>
+            <button class="resultArea__btn" id="copy-btn">Copiar</button>
+            <button class="resultArea__btn" id="clear-btn">Limpiar</button>
+          </div>
+        </div>
+      </section>
+      <div class="errorArea">
         <p id="error-text"></p>
       </div>
     </main>

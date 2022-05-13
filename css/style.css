@@ -1,4 +1,97 @@
-.errors {
-  color: red;
-  font-weight: 600;
+body {
+  width: 100%;
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+header {
+  margin-bottom: 10px;
+  background: linear-gradient(to top, white, #e7cffd);
+  padding: 10px; }
+
+.boxTitle {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  color: #090952; }
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.inputArea {
+  display: flex;
+  flex-direction: column; }
+  .inputArea__input {
+    width: 500px;
+    height: 600px;
+    font-size: 50px;
+    margin-bottom: 25px;
+    border: none;
+    background-color: #fdf1e2;
+    border-radius: 10px; }
+  .inputArea__waitInput {
+    width: 500px;
+    height: 600px;
+    font-size: 50px;
+    margin-bottom: 25px;
+    border: none;
+    background-color: #fdf1e2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .inputArea__btns {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px; }
+    .inputArea__btns__btn {
+      font-size: 25px;
+      border-radius: 5px;
+      background-color: #b6b6fc;
+      border: none;
+      padding: 10px;
+      font-weight: 500; }
+    .inputArea__btns #decrypt-btn {
+      background-color: white;
+      border: 2px solid #b6b6fc; }
+
+.animationArea {
+  width: 150px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .animationArea__gif {
+    width: 130px;
+    height: 130px; }
+
+.resultArea__resultBox {
+  width: 500px;
+  height: 600px;
+  font-size: 50px;
+  margin-bottom: 25px;
+  border: none;
+  background-color: #fdf1e2;
+  border-radius: 10px; }
+
+.resultArea__btn {
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: #b6b6fc;
+  border: none;
+  padding: 10px;
+  font-weight: 500; }
+
+.resultArea #clear-btn {
+  background-color: #815353;
+  color: aliceblue;
+  font-weight: 500; }
+
+.errorArea {
+  display: flex;
+  justify-content: center; }
+  .errorArea__text {
+    color: red;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
