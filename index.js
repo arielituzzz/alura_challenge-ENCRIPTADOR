@@ -11,10 +11,7 @@ input.select();
 const inputAnimationBox = document.createElement("div");
 inputAnimationBox.classList.add("inputArea__waitInput");
 const inputAnimation = document.createElement("img");
-inputAnimation.setAttribute(
-  "src",
-  "/assets/animation/animation_500_l34sadiq.gif"
-);
+inputAnimation.setAttribute("src", "/assets/animation_500_l34sadiq.gif");
 inputAnimationBox.appendChild(inputAnimation);
 /*------------------------------------------- */
 
@@ -37,7 +34,6 @@ const waitAnimation = document.createElement("img");
 
 /*****************************VALIDACIONES***************************** */
 const regExpMayus = /[A-Zá-ýÁ-Ý]/g;
-// const regExpCaract = /\W/g;
 const regExpCaract = /[`~@#$%^&*()_+-={\}\\\|:;'"<>?/,.]/g;
 /*--------------------------------------------------------------------- */
 
@@ -194,7 +190,7 @@ function waitStartEncrypt() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       animationArea.appendChild(actionAnimation);
-      actionAnimation.setAttribute("src", "/assets/animation/13046-locked.gif");
+      actionAnimation.setAttribute("src", "/assets/13046-locked.gif");
       resolve();
     }, 2000);
   });
@@ -203,10 +199,7 @@ function waitStartDecrypt() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       animationArea.appendChild(actionAnimation);
-      actionAnimation.setAttribute(
-        "src",
-        "/assets/animation/13047-unlocked.gif"
-      );
+      actionAnimation.setAttribute("src", "/assets/13047-unlocked.gif");
       resolve();
     }, 2000);
   });
