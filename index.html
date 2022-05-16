@@ -10,6 +10,10 @@
   <body>
     <header>
       <img src="/assets/img/Vector.png" alt="alura-img" />
+      <img
+        src="/assets/img/a7fe7961-bb89-4423-931c-f340d2e09e8c.webp"
+        alt="alura-img"
+      />
     </header>
     <main>
       <div class="boxTitle"><h1>Challenge Encriptador</h1></div>
@@ -33,6 +37,9 @@
               Desencriptar
             </button>
           </div>
+          <div class="inputArea__reference">
+            <p>No se permite mayusculas, acentos ni caracteres especiales</p>
+          </div>
         </div>
         <div id="animation-area" class="animationArea"></div>
         <div class="resultArea">
@@ -40,6 +47,7 @@
             type="text"
             id="result"
             class="resultArea__resultBox"
+            readonly
           ></textarea>
           <div>
             <button class="resultArea__btn" id="copy-btn">Copiar</button>
@@ -51,6 +59,9 @@
         <p id="error-text"></p>
       </div>
     </main>
+    <footer class="footer">
+      <p>®Desarrollado por Ariel Suarez - 2022</p>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
